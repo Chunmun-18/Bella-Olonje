@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo{
+    width: 245px;
+    height: 102px;
+}
+.head_content h1{
+    font-size: 58px;
+    margin: 0 auto 17px auto;
+    line-height: 80px;
+    max-width: 800px;
+}
+.head_content h3{
+    font-size: 24px;
+    margin: 17px;
+    padding-top: 500px;
+}
+.head_content h4{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+.top{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.option{
+    display: flex;
+    gap: 40px;
+}
+.op, .op2{
+    margin-top: 45px;
+}
+.op a, .op2 a{
+    color: black;
+    text-decoration: none;
+}
+.button{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.phone{
+    text-align: center;
+    margin-top: 20px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    opacity: 0.8;
+    padding-top: 120px;
+}
+.division{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.social img{
+    width: 41px;
+    height: 41px;
+}
+.footer{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    height: 224px;
+    flex-wrap: wrap;
+}
+.footer p{
+    color: #5c5c5c;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+.header1{
+    padding-top: 40px;
+    background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(bg1.png);
+    height: 618px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.head_content{
+    color: white;
+    max-width: 90%;
+}
+.content h3{
+    color: orangered;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.content h2{
+    color: rgb(37,43,66);
+    font-size: 40px;
+    margin: 18px 0px;
+    line-height: 57px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+.content h4{
+    color: rgb(115,115,115);
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+.content{
+    text-align: left;
+    max-width: 508px;
+    margin-top: 150px;
+    padding: 0 20px;
+}
+.pic img{
+    width: 302px;
+    height: 529px;
+}
+#bg{
+    background: #fa4a0c;
+}
+.no_bg{
+    border-radius: 30px;
+    padding: 16px 58px;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+#app1{
+    border: 1px solid white;
+    box-shadow: 0 10px 30px rgba(183,50,39,0.2);
+    background: transparent!important;
+
+}
+#app2{
+    border: 1px solid white;
+}
+.how_app_works{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.download{
+    background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(bg2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 160px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 16px;
+}
+.download h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 57px;
+}
+.download h4{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 38px;
+}
+.down{
+    border-radius: 10px;
+    padding: 16px 38px;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    transition: all 0.2s ease;
+}
+.button p{
+    color: white;
+    font-weight: bold;
+}
+#reverse{
+    flex-direction: row;
+}
+@media (max-width:1150px){
+    .division{
+        display: flex;
+        flex-direction: column;
+    }
+    #reverse{
+        flex-direction: column;
+    }
+    #footer_logo{
+        display: none;
+    }
+}
+@media (max-width:690px) {
+    .download{
+        background: #252b42;
+    }
+    .button{
+        flex-direction: column;
+    }
+    #footer_logo{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #app1{
+        border: 1px solid orangered;
+        color: orangered;
+    }
+
+    
+}
+@media (max-width:650px) {
+    .download{
+        background: #252b42;
+    }
+    .header1{
+        background: white;
+    }
+    .head_content{
+        color: black;
+    }
+    #footer_logo{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+#Product{
+    margin-top: 500px;
+}
+.line{
+    border: 1px solid #e4e4e4;
+    width: 80vw;
+    margin: 590px auto 67px;
+    
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+.head_content {
+    animation: fadeInUp 2s ease forwards;
+}
+
+.division, .content {
+    animation: fadeInUp 2s ease forwards;
+}
+
+.no_bg:hover, .down:hover {
+    background-color: orangered;
+    color: white;
+    transform: scale(1.05);
+}
+
+#app1, #app2 {
+    animation: pulse 2.5s infinite;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.footer {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+}
